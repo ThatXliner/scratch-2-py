@@ -56,7 +56,25 @@ print(parseme['targets'])
 
 
 class Stage():
-    pass
+    # TODO: Simplify the assignments
+    def __init__(self, variables, lists, broadcasts, blocks, comments,
+                 costumes, sounds, volume, tempo, videoTransparency,
+                 videoState, textToSpeechLanguage):
+        # Boring stuff
+        self.blocks               = blocks
+        self.broadcasts           = broadcasts
+        self.comments             = comments
+        self.lists                = lists
+        self.sounds               = sounds
+        self.tempo                = tempo
+        self.textToSpeechLanguage = textToSpeechLanguage
+        self.videoState           = videoState
+        self.videoTransparency    = videoTransparency
+        self.volume               = volume
+        self.variables            = variables
 
-for target in parseme['targets']:
-    if target['isStage']:
+
+
+# for target in parseme['targets']:
+#     if target['isStage']:
+#         pass
