@@ -6,12 +6,12 @@ Author: Bryanhu .
 
 Made with love by Bryanhu .
 
-(Instant snippet made by Bryan)
+Version: v0.0.0.1
 
-Version: v0.1
-
-Desc: To attempt to parse scratch project information to tokens.
-
+Desc: This file is for tokenizing the scratch project for
+easier usage. It will store the output tokens in a list called
+'token_output' or in an output.txt file. These tokens may be used for
+other languages to process such as C++, etc.
 """
 import json
 import pprint
@@ -20,7 +20,7 @@ import pprint
 def get_file(prompt="Please enter the full file path:"):
     """
     To easily get the contents of a file.
-    Is rcursive.
+    Is recursive.
 
     Parameters
     ----------
@@ -61,6 +61,9 @@ class Stage():
                  costumes, sounds, volume, tempo, videoTransparency,
                  videoState, textToSpeechLanguage):
         # Boring stuff
+        self.code = [blocks, comments]
+        if blocks == {} and comments == {}:
+            self.code = None
         self.blocks               = blocks
         self.broadcasts           = broadcasts
         self.comments             = comments
