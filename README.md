@@ -20,4 +20,4 @@ You can use the JSON to a cleaner, more generic, JSON python script in ___ .
 
 The formatting guidelines are still WIP, too.
 
-You may contribute.
+You may contribute. If you want to, email me at bryan.hu.cn@gmail.com
