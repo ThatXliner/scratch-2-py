@@ -19,3 +19,5 @@ You can use the JSON to a cleaner, more generic, JSON python script in ___ .
 :warning: THIS IS STILL HIGHLY IN-DEV. **THIS IS STILL IN IT'S _very_ EARLY STAGES OF DEVELOPMENT**.
 
 The formatting guidelines are still WIP, too.
+
+You may contribute.
