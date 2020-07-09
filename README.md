@@ -8,11 +8,11 @@ NOTE: README still under construction.
 
 _TL;DR_: This turns scratch projects into python.
 
-Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [sb-edit](https://github.com/PullJosh/sb-edit), this implementation tries to convert the crazy ugly scratch JSON into tokens and turn them into much more readable [scratchblocks](https://github.com/scratchblocks/scratchblocks). Then, parsing those scratchblocks, this program will make a [pygame](https://www.pygame.org/news) game.
+Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [sb-edit](https://github.com/PullJosh/sb-edit), this implementation tries to convert the crazy ugly scratch JSON (which we call sb-JSON) into a cleaner, more generic, JSON and turn them into much more readable [scratchblocks](https://github.com/scratchblocks/scratchblocks). Then, parsing those scratchblocks, this program will make a [pygame](https://www.pygame.org/news) game.
 
 The parsing of JSON into much more easily readable (and usable) could be a separate repo.... :thinking:
 
-You can use the JSON to tokens python script in ___ .
+You can use the JSON to a cleaner, more generic, JSON python script in ___ .
 
 ## :warning: WARNING :warning:
 

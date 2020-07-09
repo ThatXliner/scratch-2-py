@@ -6,10 +6,10 @@ Author: Bryanhu .
 
 Made with love by Bryanhu .
 
-Version: v0.0.0.1
+Version: v0.1.0.1
 
 Desc: This file is for tokenizing the scratch project for
-easier usage. It will store the output tokens in a TOKEN_JSON file. This is
+easier usage. It will store the output JSON in a GOOD_JSON.json file. This is
 made so other languages such as C++, etc can easily process ugly scratch JSON.
 """
 ################################################################
