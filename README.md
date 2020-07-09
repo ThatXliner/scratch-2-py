@@ -12,7 +12,19 @@ Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [
 
 The parsing of JSON into much more easily readable (and usable) could be a separate repo.... :thinking:
 
-You can use the JSON to a cleaner, more generic, JSON python script in sbJSON2clean/GOOD_JSON.json or the scratchblocks representation in sbJSON2clean/scratchblock_repre.txt.
+You can use the JSON to a cleaner, more generic, JSON python script in
+
+<u>
+  <code>sbJSON2clean/GOOD_JSON.json</code>
+</u>
+
+or the scratchblocks representation in
+
+<u>
+  <code>sbJSON2clean/scratchblock_repr.txt</code>
+</u>
+
+.
 
 ## :warning: WARNING :warning:
 
