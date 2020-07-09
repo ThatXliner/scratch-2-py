@@ -9,16 +9,20 @@ Made with love by Bryanhu .
 Version: v0.0.0.1
 
 Desc: This file is for tokenizing the scratch project for
-easier usage. It will store the output tokens in a list called
-'token_output' or in an output.txt file. These tokens may be used for
-other languages to process such as C++, etc.
+easier usage. It will store the output tokens in a TOKEN_JSON file. This is
+made so other languages such as C++, etc can easily process ugly scratch JSON.
 """
+################################################################
+# Imports ######################################################
+################################################################
 import json
-import pprint
+# import pprint  # NOT USED
 
+################################################################
+# Get input from INPUT_JSON.txt ################################
+################################################################
 
-
-with open('Example.txt') as f:
+with open('INPUT_JSON.txt') as f:
     parseme = json.loads(f.read())
 output = {}
 
@@ -28,7 +32,6 @@ print(parseme['targets'])
 class Sprite(object):
     # TODO: Simplify the assignments
     # How? Well, we're going to combine the data variables and the lists.
-
 
 
     def __init__(self,variables, lists, broadcasts, blocks, comments,
@@ -47,8 +50,6 @@ class Sprite(object):
         self.videoTransparency    = videoTransparency
         self.volume               = volume
         self.variables            = variables
-
-
 
 if __debug__:
     for target in parseme['targets']:
