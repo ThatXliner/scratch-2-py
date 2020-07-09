@@ -1,11 +1,21 @@
 # scratch-2-py
 
+NOTE: README still under construction.
+
 ## What is this?
-Scratch-2-py: The python implementation of PullJosh's Leopard. Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [sb-edit](https://github.com/PullJosh/sb-edit), this implementation tries to convert scratch JSON into tokens, turn them into scratchblocks, then, using those scratchblocks, make a pygame game.
 
-The parsing of JSON could be a sepreate repo.... 
+**Scratch-2-py: The python implementation of PullJosh's Leopard.**
 
-## WARNING
-THIS IS STILL HIGHLY IN-DEV. THIS IS STILL IN IT'S EARLY STAGES OF DEVELOPMENT. The formatting guidelines are still WIP, too.
+_TL;DR_: This turns scratch projects into python.
 
+Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [sb-edit](https://github.com/PullJosh/sb-edit), this implementation tries to convert the crazy ugly scratch JSON into tokens and turn them into much more readable [scratchblocks](https://github.com/scratchblocks/scratchblocks). Then, parsing those scratchblocks, this program will make a [pygame](https://www.pygame.org/news) game.
 
+The parsing of JSON into much more easily readable (and usable) could be a separate repo.... :thinking:
+
+You can use the JSON to tokens python script in ___ .
+
+## :warning: WARNING :warning:
+
+:warning: THIS IS STILL HIGHLY IN-DEV. **THIS IS STILL IN IT'S _very_ EARLY STAGES OF DEVELOPMENT**.
+
+The formatting guidelines are still WIP, too.
