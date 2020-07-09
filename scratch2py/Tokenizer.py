@@ -18,8 +18,37 @@ import pprint
 
 
 
+<<<<<<< HEAD
 with open('/Users/bryanhu/projects/scratch-2-py/scratch2py/Example.txt') as f:
     parseme = json.loads(f.read())
+=======
+    Parameters
+    ----------
+    prompt : str
+        The prompt string.
+
+    Returns
+    -------
+    str
+        The contents of the file.
+
+    """
+
+    from pathlib2 import Path
+
+    file_path = Path(input(str(prompt))).expanduser()
+    try:
+        return str(file_path.read_text())
+    except Exception:
+        print('Invalid file path')
+        return get_file(prompt=prompt)
+
+
+
+# parseme = json.loads(get_file(prompt='Enter the path to the txt file to parse:'))
+
+parseme = json.loads(parseme)
+>>>>>>> 5ca6ffed89ca4fd769345b7f2b64a5dd4d5f775b
 output = {}
 
 print(parseme['targets'])
@@ -51,9 +80,17 @@ for target in parseme['targets']:
         # There must be a better way to do this
         stage = Sprite(
                       # The data
+<<<<<<< HEAD
                       {
                         variable[1][0]:variable[1][1] for variable in list( given_stage['variables'].items())
                         },
+=======
+                      {  # Processing the variables
+                          variable[1][0]:variable[1][1]
+                          for variable in list(
+                              given_stage['variables'].items())
+                      },
+>>>>>>> 5ca6ffed89ca4fd769345b7f2b64a5dd4d5f775b
                       given_stage['lists'],
                       given_stage['broadcasts'],
                       # Workspace elements
