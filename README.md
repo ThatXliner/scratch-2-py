@@ -20,9 +20,7 @@ You can use the JSON to a cleaner, more generic, JSON python script in
 or the scratchblocks representation in
 <u>
   <code>sbJSON2clean/scratchblock_repr.txt</code>
-</u>
-
-.
+</u>.
 
 ## :warning: WARNING :warning:
 
