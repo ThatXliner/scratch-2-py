@@ -17,9 +17,7 @@ You can use the JSON to a cleaner, more generic, JSON python script in
 <u>
   <code>sbJSON2clean/GOOD_JSON.json</code>
 </u>
-
 or the scratchblocks representation in
-
 <u>
   <code>sbJSON2clean/scratchblock_repr.txt</code>
 </u>
