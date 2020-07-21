@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Author: Bryanhu .
+
 @Bryanhu .
 
 Made with love by Bryanhu .
@@ -106,7 +107,7 @@ print(parseme["targets"])
 if __debug__:
     for target in parseme["targets"]:
         try:
-            if (given_stage := target["isStage"]) :
+            if (given_stage := target["isStage"]):
                 # There must be a better way to do this
                 stage = Sprite(
                     # The data
