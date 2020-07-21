@@ -131,4 +131,6 @@ if __debug__:
                     given_stage["textToSpeechLanguage"],
                 )
         except SyntaxError:  # You're not running python3.8
-            raise WalrusDiedError("Your version of python doesn’t support the walrus operator (python3.8 -?)")
+            raise WalrusDiedError(
+                "Your version of python doesn’t support the walrus operator (python3.8 -?)"
+            )

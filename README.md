@@ -1,3 +1,5 @@
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) + [![Code style: pep8](https://img.shields.io/badge/Code%20style%3A-pep8-brightgreen)](https://github.com/hhatto/autopep8)
+
 # scratch-2-py
 
 NOTE: README still under construction. And I'm also not done
@@ -17,10 +19,14 @@ You can use the JSON to a cleaner, more generic, JSON python script in
 <u>
   <code>sbJSON2clean/GOOD_JSON.json</code>
 </u>
+
 or the scratchblocks representation in
+
 <u>
   <code>sbJSON2clean/scratchblock_repr.txt</code>
-</u>.
+</u>
+
+.
 
 ## :warning: WARNING :warning:
 
