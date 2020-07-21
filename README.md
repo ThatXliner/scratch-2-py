@@ -1,6 +1,6 @@
 # scratch-2-py
 
-NOTE: README still under construction.
+NOTE: README still under construction. And I'm also not done
 
 ## What is this?
 
