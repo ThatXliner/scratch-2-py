@@ -110,10 +110,10 @@ print(parseme["targets"])
 
 if __debug__:
     for target in parseme["targets"]:
-        try:
-            if (given_stage := target["isStage"]) :
-                # There must be a better way to do this
-                stage = Sprite(
+        if target["isStage"] :
+            given_stage = target
+            # There must be a better way to do this
+            stage = Sprite(
                     # The data
                     {  # Processing the variables
                         variable[1][0]: variable[1][1]
@@ -133,8 +133,4 @@ if __debug__:
                     given_stage["videoTransparency"],
                     given_stage["videoState"],
                     given_stage["textToSpeechLanguage"],
-                )
-        except SyntaxError:  # You're not running python3.8
-            raise WalrusDiedError(
-                "Your version of python doesn’t support the walrus operator (python3.8 -?)"
             )
