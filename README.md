@@ -46,9 +46,13 @@ This project features the following:
 In the future, we plan to add the following features:
 
 [ ] A command line interface
+
 [ ] A decent API
+
 [ ] A better README
+
 [ ] Documentation
+
 [ ] Leopard integration
 
 But for now, our highest priority is:
@@ -121,6 +125,7 @@ If you want more info on the black code style, see [here](https://black.readthed
 
 ## Naming conventions:
 Variables and function names = `snake_case`
+
 Class names and file names   = `camelCase`
 
 
