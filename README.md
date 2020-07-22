@@ -65,8 +65,69 @@ TK
 
 Black is pretty strict, and you can't configure it. Well, all we care about is the code, not the style.
 
+**The only significant difference is that Black's max line length is `88` characters.** You should update your `flake8` settings accordingly. 
+
+Also, it is recommended to use comments such as:
+
+```python
+# NOTE:
+# TODO:
+# HACK:
+# DEBUG:
+# OPTIMIZE:
+```
+
+These comments will be given special attention if you use the [MagicPython](https://github.com/MagicStack/MagicPython) python language syntax highlighting.
+
+A little note: I personally prefer lots of inline comments in contrast to [PEP8](https://www.python.org/dev/peps/pep-0008/#inline-comments), I prefer lots of inline comments. I shouldn't 😔
+
+**PLEASE USE [4 spaces](https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces)**
+
+Black prefers double quotes. I'm not sure it'll switch to single quotes if necessary. It also will leave a space before the colon (`:`) in if statements, etc.
+
+Use `try`/`excepts` over `if`-statements if possible. Same applies to `list`/`dict` comprehensions over for loops.
+
+Also, **try to align statements as much as possible!**
+
+Instead of this:
+```
+var1 = ["foo", "bar"]
+long_name_var2 = 5
+v3 = [float(x) for x in range(10)]
+v4 = [x for x in rsnge(100)]
+```
+
+do
+```
+var1           = ["foo", "bar",]
+long_name_var2 = 5
+v3             = [float(x) for x in range(10)]
+v4             = [x for x in rsnge(100)]
+```
+I think you'll need to configure `flake8` to ignore that, too.
+Notice the hanging comma? Black did that.
+
+
+Block comments, such as
+```
+################################################################
+# This block comment ends at 79 characters #####################
+################################################################
+```
+
+are used to seperate code into "paragraphs". It gives the reader an idea of what the next hundred/couple lines will be about. **Do not overuse.**
+
+If you want more info on the black code style, see [here](https://black.readthedocs.io/en/stable/the_black_code_style.html)
+
+## Naming conventions:
+Variables and function names = `snake_case`
+Class names and file names   = `camelCase`
+
+
 # A little warning
 
 :warning: THIS IS STILL HIGHLY IN-DEV. **THIS IS STILL IN IT'S _very_ EARLY STAGES OF DEVELOPMENT**.
 
-You may contribute. If you want to, email me at bryan.hu.cn@gmail.com
+You may contribute.
+
+If you want to, email me at bryan.hu.cn@gmail.com
