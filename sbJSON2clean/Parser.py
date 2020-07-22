@@ -17,6 +17,8 @@ made so other languages such as C++, etc can easily process ugly scratch JSON.
 # Imports ######################################################
 ################################################################
 import json
+from pathlib import Path
+
 
 # import pprint  # NOT USED
 
@@ -98,10 +100,10 @@ class WalrusDiedError(Exception):
 ################################################################
 # Get input from INPUT_JSON.txt ################################
 ################################################################
+INPUT_FILE = "INPUT_JSON.txt"
 
-with open("INPUT_JSON.txt") as f:
-    parseme = json.loads(f.read())
-output = {}
+parseme = json.loads(Path(Path(__file__).parent / f"{INPUT_FILE}").read_text())
+output  = {}
 
 print(parseme["targets"])
 
