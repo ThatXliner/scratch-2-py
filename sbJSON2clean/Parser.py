@@ -64,9 +64,9 @@ class Sprite(object):
         videoTransparency,
         videoState,
         textToSpeechLanguage,
-        name,
-        data,
-        code,
+        name = None,
+        data = None,
+        code = None,
     ):
         """For making the scratch sprites a little bit easier to handle.
 
