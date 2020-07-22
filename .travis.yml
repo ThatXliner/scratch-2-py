@@ -9,4 +9,4 @@ install:
   - python3 -m pip install pytest
   - python3 -m pip install -r requirements.txt
 script:
-  - pytest tests.py
+  - pytest scratch-2-py/sbJSON2clean/Parser.py
