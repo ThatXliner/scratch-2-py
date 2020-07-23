@@ -2,6 +2,8 @@
 
 **<sup>(Let it scream at you)</sup>**
 
+[![Build Status](https://travis-ci.com/ThatXliner/scratch-2-py.svg?branch=master)](https://travis-ci.com/ThatXliner/scratch-2-py)
+
 # scratch-2-py
 
 NOTE: README still under construction. And I'm also not done
