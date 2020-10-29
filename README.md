@@ -137,4 +137,4 @@ Class names and file names   = `camelCase`
 
 You may contribute.
 
-If you want to, email me at bryan.hu.cn@gmail.com
+If you want to, email me at bryan.hu.2020@gmail.com
