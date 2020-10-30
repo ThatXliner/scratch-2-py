@@ -7,6 +7,7 @@
 # scratch-2-py
 
 NOTE: README still under construction. And I'm also not done
+NOTE (2020): I am back (this was unmaintained and sorta abandoned) and I will re-design this whole operation via my better coding skills!
 
 ## What is this?
 
@@ -14,7 +15,7 @@ NOTE: README still under construction. And I'm also not done
 
 _TL;DR_: This turns scratch projects into python.
 
-Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [sb-edit](https://github.com/PullJosh/sb-edit), this implementation tries to convert the crazy ugly scratch JSON (which we call sb-JSON) into a cleaner, more generic, JSON (instead of JavaScript objects). Then, parsing the JSON, this program will make a [pygame](https://www.pygame.org/news) game.
+Inspired by PullJosh's [Leopard](https://github.com/PullJosh/leopard), and his [sb-edit](https://github.com/PullJosh/sb-edit), this implementation tries to convert the crazy ugly scratch JSON (which we call sb-JSON) into a cleaner, more generic, JSON (instead of JavaScript objects). Then, parsing the JSON, this program will make a [pygame](https://www.pygame.org/news) game.  (Or, just python classes)
 
 **NOTE: I personally don't know pygame that much so any experts should contribute**
 
