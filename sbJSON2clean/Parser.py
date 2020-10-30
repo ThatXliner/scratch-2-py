@@ -16,7 +16,7 @@ made so other languages such as C++, etc can easily process ugly scratch JSON.
 ################################################################
 # Imports ######################################################
 ################################################################
-import json
+import json as _json
 from pathlib import Path
 
 
@@ -52,21 +52,7 @@ class Sprite(object):
 
     def __init__(
         self,
-        variables,
-        lists,
-        broadcasts,
-        blocks,
-        comments,
-        costumes,
-        sounds,
-        volume,
-        tempo,
-        videoTransparency,
-        videoState,
-        textToSpeechLanguage,
-        name = None,
-        data = None,
-        code = None,
+        json
     ):
         """For making the scratch sprites a little bit easier to handle.
 
@@ -77,24 +63,34 @@ class Sprite(object):
 
         """
         # Boring stuff
-        # NOTE: We're not using the name, data, and code variables
-        # Just yet.
-        self.code = code
-        self.broadcasts = broadcasts
-        self.lists = lists
-        self.sounds = sounds
-        self.tempo = tempo
-        self.textToSpeechLanguage = textToSpeechLanguage
-        self.videoState = videoState
-        self.videoTransparency = videoTransparency
-        self.volume = volume
-        self.variables = variables
+        self._name = json["name"]
+        self._vars = {item[0]: item[1] for item in json["variables"].values()}
+        self.code = json["blocks"]
+        self.costumes = json["costumes"]
+        self.sounds = json["sounds"]
+        self.volume = json["volume"]
+        self.layerOrder = json["layerOrder"]
+        self.visible = json["visible"]
+        self.x = json["x"]
+        self.y = json["y"]
+        self.size = json["size"]
+        self.direction = json["direction"]
+        self.draggable = json["draggable"]
+        self.rotationStyle = json["rotationStyle"]
+
+
+
 
 
 class WalrusDiedError(Exception):
     """You're not running the version of python that supports the walrus operator syntax."""
 
     pass
+class Parser(object):
+    def __init__(self, json):
+        self._sprites = [item for item in json["targets"] if not item["isStage"]]
+        self._stage = [item for item in json["targets"] if item["isStage"]][0]
+        self._globals = {item[0]: item[1] for item in self._stage["variables"].values()}
 
 
 ################################################################
